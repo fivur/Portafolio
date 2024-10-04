@@ -1,0 +1,577 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #F5F5F5;
+    --color-de-link: #e9c3c3;
+    --color--de-cabecera: #424141;
+    
+}
+
+
+html{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+}
+
+ol, ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(248, 246, 246);
+    padding: 5px;
+    margin-left: 35px;
+}
+
+p {
+    color: #424141;
+}
+
+h3 {
+    color: #424141;
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display:flex;
+    padding: 2rem;
+    background-color: var( --color--de-cabecera);
+    justify-content: space-between;
+   
+}
+
+.cabecera__logo {
+    max-width: 80px;
+    
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.navegacion__lista {
+    display: none;
+    
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease,  background-color 0.3s ease;
+    
+}
+
+
+.navegacion__elemento a:hover {
+    transform: translateY(-10px);
+    background-color: #29b63c;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+
+
+
+.flex-presentacion{
+    background-image: url('/assets/fondo.png');
+    background-position-x: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 64px 0px 0px 0px;
+    gap: 10px;
+    flex-flow: row-reverse;
+    display: flex;
+    h1, h2,  p {
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0); /* Añade un poco de sombra al texto para que se lea mejor */
+    }
+  
+
+  
+}
+
+.flex-presentacion__foto{
+   
+    width: 455px;
+    height: 455px;
+    margin: 0 auto;  
+    padding: 40px;
+    display: flex;
+    border-radius: 1px;
+}
+
+
+.flex-presentacion__contenedor{
+
+    width: Fixed (751px)px;
+    height: Hug (246px)px;
+    gap: 20px;
+    opacity: 0px;
+    padding: 0px;
+
+    
+  
+}
+
+.presentacion__titulo{
+    width: 751px;
+    height: 122px;
+    padding: 50px;
+    gap: 10px;
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 61.05px;
+    text-align: left;
+
+}
+
+
+.presentacion__subtitulo{
+    width: 751px;
+    padding: 7%;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25.83px;
+    text-align: left;
+   
+     /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+             /* Altura de la ventana */
+   
+
+}
+
+
+
+.redes{
+    display: flex;
+    padding: 7%;
+    gap: 10px;
+  
+}
+/*-------------------- Sección sobre mí ----------------------------------*/
+
+.sobre-mi{
+    width: Fill (1,440px)px;
+    height: Hug (383px)px;
+    padding: 64px 0px 0px 0px;
+    gap: 30px;
+    opacity: 0px;
+    background: #EAF2FD;
+    padding: 50px;
+    justify-content:center;
+    text-align: center;
+}
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades{
+
+  margin-top: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 100px;  
+}
+
+.habilidades__titulo{
+
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 0;
+
+   
+}
+
+.habilidades__lista{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    list-style: none;
+    padding: 0;
+
+
+}
+
+.habilidades__elemento{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(240, 239, 239, 0.1);
+    transition: transform 0.3s ease;
+    text-emphasis-color:inherit;
+    background-color: var(--color-de-fondo);
+    
+
+}
+
+
+.habilidades__elemento:hover {
+    transform: scale(1.05);
+}
+
+.habilidades__icono {
+
+    margin-bottom: 10px;
+}
+
+.habilidades__nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones {
+
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.aficiones__titulo {
+
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 0;
+}
+
+
+.aficiones__lista {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    list-style: none;
+    padding: 0;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-de-fondo);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.aficiones__elemento:hover {
+    transform: scale(1.05);
+}
+
+.aficiones__icono {
+
+    margin-bottom: 10px;
+}
+
+
+.aficiones__nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* FORMACIÓN */ 
+
+.formacion {
+
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.formacion__titulo {
+
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 0;
+}
+
+.formacion__lista {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    list-style: none;
+    padding: 0;
+    text-decoration-color: #424141;
+}
+
+
+.formacion__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+
+.formacion__elemento img {
+
+    width: 90px;
+    height: 90px;
+}
+
+#buap-logo{
+
+    background: var(--color-menu);
+    border-radius:50%;
+}
+
+.formacion__elemento:hover {
+    transform: scale(1.05);
+}
+
+
+.formacion__icono {
+
+    margin-bottom: 10px;
+}
+
+
+.formacion__nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos {
+
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.proyectos__titulo {
+
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    
+}
+
+.proyectos__lista {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    list-style: none;
+    padding: 0;
+    
+}
+
+
+.proyectos__elemento {
+    display: flex;
+    flex-direction: column; /* Cambié a columna para mejorar la disposición de la imagen y el texto */
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+    margin: 10px;
+    padding: 20px;
+    width: 50%; /* Ajuste para que el contenedor ocupe todo el espacio */
+    max-width: 400px; /* Tamaño máximo del contenedor */
+    box-shadow: 0 4px 6px rgba(235, 234, 234, 0.1);
+    transition: transform 0.3s ease
+}
+
+
+.proyectos__elemento:hover {
+
+    transform: scale(1.05);
+}
+
+
+.proyectos__elemento img {
+
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar */
+    border-radius: 10px; /* Opción adicional para redondear las esquinas de la imagen */
+}
+
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow:  0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+    
+
+
+}
+
+
+.contacto__titulo {
+
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.contacto__subtitulo {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.formaulario__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    margin: auto;
+    
+}
+
+.contacto__icono {
+    
+    display: none;
+    
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    
+}
+
+
+.contacto__campo {
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+  
+.contacto__campo--textarea {
+    height: 150px;
+}
+  
+.contacto__boton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.contacto__boton:hover {
+    background-color: #218838;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    background-color: var( --color-de-fondo);
+    margin-top: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer__about {
+
+    margin-bottom: 10px;
+}
+
+.redes__footer {
+
+    justify-content: center;
+    
+}
+
+
